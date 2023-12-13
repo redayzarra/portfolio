@@ -2,6 +2,7 @@ import Container from "@/components/Container";
 import Hello from "@/components/Hello";
 import NavBar from "@/components/NavBar";
 import styles from "./page.module.css";
+import Waves from "@/components/Waves";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hello className="mt-10" />
       </Container>
       <div className="spacer layer1 mt-4"></div>
+      
     </div>
   );
 }
