@@ -6,12 +6,11 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className="">
-      <section className="bubble">
-        <Container>
-          <NavBar />
-          <Hello className="mt-10" />
-        </Container>
-      </section>
+      <Container>
+        <NavBar />
+        <Hello className="mt-10" />
+      </Container>
+      <div className="spacer layer1 mt-4"></div>
     </div>
   );
 }
