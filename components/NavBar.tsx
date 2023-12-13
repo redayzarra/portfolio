@@ -1,3 +1,4 @@
+import { ModeToggle } from "./ModeToggle";
 import { Button } from "./ui/button";
 
 const NavBar = () => {
@@ -21,7 +22,7 @@ const NavBar = () => {
         >
           Resume
         </Button>
-        {/* <ModeToggle /> */}
+        <ModeToggle />
       </div>
     </div>
   );
