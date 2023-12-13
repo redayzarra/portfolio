@@ -1,9 +1,8 @@
-import Image from "next/image";
-import React from "react";
 import Steve from "@/public/images/SteveRodgers.jpg";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 import { Button } from "./ui/button";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
 
 const Hello = ({ className }: { className?: string }) => {
   return (
@@ -40,12 +39,20 @@ const Hello = ({ className }: { className?: string }) => {
             <Button className="rounded-full">Contact</Button>
           </div>
           <div className="mt-2 flex items-center justify-center space-x-2">
-            <Link href="https://www.linkedin.com/in/redayzarra/">
-              <FaLinkedin size={30} className="rounded-full fill object-fill" />
-            </Link>
-            <Link href="https://github.com/redayzarra">
-              <FaGithub size={30} />
-            </Link>
+            <a
+              href="https://www.linkedin.com/in/redayzarra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsLinkedin size={30} className="rounded-full" />
+            </a>
+            <a
+              href="https://github.com/redayzarra"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub size={30} className="" />
+            </a>
           </div>
         </div>
       </div>
