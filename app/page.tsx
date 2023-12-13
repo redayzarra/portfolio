@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe";
 import Container from "@/components/Container";
 import Hello from "@/components/Hello";
 import NavBar from "@/components/NavBar";
@@ -12,9 +13,13 @@ export default function Home() {
       </Container>
       {/* Waves */}
       <div className="spacer layer1 mt-4"></div>
-      <Container className="bg-black text-white -mt-10">
-        <Title heading="Get to know me" title="About Me" />
-      </Container>
+
+      <div className="bg-black text-background">
+        <Container className="-mt-10">
+          <Title heading="Get to know me" title="About Me" />
+          <AboutMe />
+        </Container>
+      </div>
     </div>
   );
 }
