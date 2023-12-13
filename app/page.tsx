@@ -1,9 +1,11 @@
+import Hello from "@/components/Hello";
 import NavBar from "@/components/NavBar";
 
 export default function Home() {
   return (
     <div>
       <NavBar />
+      <Hello />
     </div>
   );
 }
