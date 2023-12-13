@@ -3,7 +3,6 @@ import { ModeToggle } from "./ModeToggle";
 
 const NavBar = () => {
   return (
-    <Container>
       <div className="flex items-center justify-between">
         <h1 className="font-black text-xl">ReDay</h1>
         <div className="flex items-center space-x-6">
@@ -14,7 +13,6 @@ const NavBar = () => {
           <ModeToggle />
         </div>
       </div>
-    </Container>
   );
 };
 
