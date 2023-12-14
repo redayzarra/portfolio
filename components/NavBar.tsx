@@ -1,7 +1,11 @@
-import { ModeToggle } from "./ModeToggle";
+"use client";
+
+import { useState } from "react";
+import Menu from "./Menu";
 import { Button } from "./ui/button";
 
 const NavBar = () => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <div className="flex items-center justify-between">
       <h1 className="font-black text-xl">ReDay</h1>
@@ -22,7 +26,7 @@ const NavBar = () => {
         >
           Resume
         </Button>
-        <ModeToggle />
+        <Menu isActive={isActive} setIsActive={setIsActive} />
       </div>
     </div>
   );

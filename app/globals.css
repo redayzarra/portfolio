@@ -96,6 +96,41 @@
   width: 20px;
   height: 20px;
   background-color: black;
-  position: fixed; 
+  position: fixed;
   border-radius: 50%;
+}
+
+.white-cursor {
+  background-color: white;
+}
+
+.menu-button {
+  height: 39px;
+  width: 80px;
+  border-radius: 19px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  .slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .elem {
+      height: 100%;
+      width: 100%;
+      background-color: #92b6aa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-of-type(2) {
+        position: absolute;
+        top: 100%;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
 }
