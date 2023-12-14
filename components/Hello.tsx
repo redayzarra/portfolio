@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { Button } from "./ui/button";
+import { MdEmail } from "react-icons/md";
 
 const Hello = ({ className }: { className?: string }) => {
   return (
@@ -32,28 +33,39 @@ const Hello = ({ className }: { className?: string }) => {
 
           {/* Resume and Contact Buttons */}
           <div className="mt-4 space-x-2">
-            <Button
-              className="rounded-full border-[2px] border-foreground font-bold"
-              variant="outline"
-            >
-              Resume
-            </Button>
-            <Button className="rounded-full">Contact</Button>
+            <a href="">
+              <Button
+                className="rounded-full border-[2px] border-foreground font-bold"
+                variant="outline"
+              >
+                Resume
+              </Button>
+            </a>
+            <a href="">
+              <Button className="rounded-full">Contact</Button>
+            </a>
           </div>
-          <div className="mt-4 flex items-center justify-center space-x-2">
+          <div className="mt-4 flex items-center justify-center space-x-4">
             <a
               href="https://www.linkedin.com/in/redayzarra/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsLinkedin size={27} className="rounded-full" />
+              <MdEmail size={32} className="rounded-full" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/redayzarra/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsLinkedin size={30} className="rounded-full" />
             </a>
             <a
               href="https://github.com/redayzarra"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={27} className="" />
+              <FaGithub size={30} className="" />
             </a>
           </div>
         </div>
