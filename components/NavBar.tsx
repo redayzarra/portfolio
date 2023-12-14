@@ -3,13 +3,14 @@
 import { useState } from "react";
 import Menu from "./Menu";
 import { Button } from "./ui/button";
+import Logo from "./Logo";
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(false);
   return (
     <div className="flex items-center justify-between">
-      <h1 className="font-black text-xl">ReDay</h1>
-      <div className="flex items-center space-x-6">
+      <Logo />
+      {/* <div className="flex items-center space-x-6">
         <a href="" title="About" className="nav-link">
           About
         </a>
@@ -26,8 +27,8 @@ const NavBar = () => {
         >
           Resume
         </Button>
-        <Menu isActive={isActive} setIsActive={setIsActive} />
-      </div>
+      </div> */}
+      <Menu isActive={isActive} setIsActive={setIsActive} />
     </div>
   );
 };

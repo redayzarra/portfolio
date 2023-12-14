@@ -120,16 +120,48 @@
     .elem {
       height: 100%;
       width: 100%;
-      background-color: #92b6aa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-color: #c6e7ce;
 
       &:nth-of-type(2) {
         position: absolute;
         top: 100%;
         background-color: black;
         color: white;
+      }
+
+      &:hover {
+        .perspective-text {
+          transform: rotateX(90deg);
+          p {
+            &:nth-of-type(1) {
+              transform: translateY(-100%);
+              opacity: 0;
+            }
+            &:nth-of-type(2) {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .perspective-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+    transform-style: preserve-3d;
+
+    p {
+      transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+      &:nth-of-type(2) {
+        position: absolute;
+        transform: rotateX(-90deg) translateY(9px);
+        transform-origin: bottom center;
+        opacity: 0;
       }
     }
   }

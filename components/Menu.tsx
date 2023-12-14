@@ -10,16 +10,29 @@ interface Props {
 const Menu = ({ isActive, setIsActive }: Props) => {
   return (
     <div onClick={() => setIsActive(!isActive)} className="menu-button">
-      <motion.div className="slider" animate={{top: isActive ? "-100%" : "0"}}>
+      <motion.div
+        className="slider"
+        animate={{ top: isActive ? "-100%" : "0" }}
+        transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
+      >
         <div className="elem">
-          <p className="text-sm font-semibold">Menu</p>
+          <PerspectiveText label="Menu" />
         </div>
         <div className="elem">
-          <p className="text-sm font-semibold">Close</p>
+          <PerspectiveText label="Close" />
         </div>
       </motion.div>
     </div>
   );
 };
+
+function PerspectiveText({ label }: { label: string }) {
+  return (
+    <div className="perspective-text text-sm font-semibold">
+      <p>{label}</p>
+      <p>{label}</p>
+    </div>
+  );
+}
 
 export default Menu;
