@@ -1,12 +1,7 @@
-"use client";
-
-import { useState } from "react";
-import Menu from "./Menu";
-import { Button } from "./ui/button";
 import Logo from "./Logo";
+import Menu from "./Menu";
 
 const NavBar = () => {
-  const [isActive, setIsActive] = useState(false);
   return (
     <div className="flex items-center justify-between">
       <Logo />
@@ -28,7 +23,7 @@ const NavBar = () => {
           Resume
         </Button>
       </div> */}
-      <Menu isActive={isActive} setIsActive={setIsActive} />
+      <Menu />
     </div>
   );
 };

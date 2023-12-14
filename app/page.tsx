@@ -2,7 +2,7 @@ import AboutMe from "@/components/AboutMe";
 import Container from "@/components/Container";
 import Cursor from "@/components/Cursor";
 import Hello from "@/components/Hello";
-import Menu from "@/components/Menu";
+import Menu from "@/components/MenuButton";
 import NavBar from "@/components/NavBar";
 import Title from "@/components/Title";
 

@@ -105,11 +105,13 @@
 }
 
 .menu-button {
-  height: 39px;
+  height: 40px;
   width: 80px;
-  border-radius: 19px;
+  border-radius: 25px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   overflow: hidden;
 
   .slider {
@@ -165,4 +167,11 @@
       }
     }
   }
+}
+
+.menu {
+  width: 480px;
+  height: 650px;
+  background-color: #c6e7ce;
+  border-radius: 25px;
 }
