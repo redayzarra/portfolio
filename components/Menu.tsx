@@ -5,22 +5,35 @@ import MenuButton from "./MenuButton";
 import { motion } from "framer-motion";
 
 const variants = {
-  open: { width: 480, height: 650 },
-  closed: { width: 80, height: 40 },
+  open: {
+    width: 300,
+    height: 400,
+    top: "-35px",
+    right: "-15px",
+    transition: { duration: 0.75, ease: [0.75, 0, 0.24, 1] },
+  },
+  closed: {
+    width: 80,
+    height: 40,
+    top: "-20px",
+    right: "0px",
+    transition: { duration: 0.75, ease: [0.75, 0, 0.24, 1] },
+  },
 };
 
 const Menu = () => {
   const [isActive, setIsActive] = useState(false);
+
   return (
     <div className="relative">
       <motion.div
-        className="menu relative"
+        className="menu"
         variants={variants}
         animate={isActive ? "open" : "closed"}
         initial="closed"
-      >
-        <MenuButton isActive={isActive} setIsActive={setIsActive} />
-      </motion.div>
+        style={{ position: "absolute", top: 0, right: 0 }}
+      ></motion.div>
+      <MenuButton isActive={isActive} setIsActive={setIsActive} />
     </div>
   );
 };

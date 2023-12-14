@@ -109,9 +109,10 @@
   width: 80px;
   border-radius: 25px;
   cursor: pointer;
+  z-index: 1000;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -20px;
+  right: 0px;
   overflow: hidden;
 
   .slider {
@@ -170,8 +171,10 @@
 }
 
 .menu {
-  width: 480px;
-  height: 650px;
+  position: absolute;
+  z-index: 100;
+  width: 300px;
+  height: 400px;
   background-color: #c6e7ce;
   border-radius: 25px;
 }

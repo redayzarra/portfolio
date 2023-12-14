@@ -7,9 +7,9 @@ import { Button } from "./ui/button";
 const Hello = ({ className }: { className?: string }) => {
   return (
     <div className={`flex items-center justify-center ${className}`}>
-      <div className="flex space-x-12">
+      <div className="flex md:space-x-12">
         {/* My photo */}
-        <div className="relative h-80 w-80 rounded-full overflow-hidden">
+        <div className="hidden md:block relative h-80 w-80 rounded-full overflow-hidden">
           <Image
             src={me}
             alt="My Picture"
@@ -22,10 +22,10 @@ const Hello = ({ className }: { className?: string }) => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
             <p className="text-sm text-muted-foreground font-base">
-              Hello! I'm
+              Hello, I'm
             </p>
-            <p className="mt-1 text-3xl font-bold">ReDay Zarra</p>
-            <p className="mt-2 text-2xl font-normal text-muted-foreground">
+            <p className="mt-2 text-3xl font-black">ReDay Zarra</p>
+            <p className="mt-1 text-[19px] font-base tracking-wider text-muted-foreground/90">
               Software Engineer
             </p>
           </div>

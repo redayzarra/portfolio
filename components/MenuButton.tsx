@@ -13,7 +13,7 @@ const MenuButton = ({ isActive, setIsActive }: Props) => {
       <motion.div
         className="slider"
         animate={{ top: isActive ? "-100%" : "0" }}
-        transition={{ duration: 0.5, ease: [0.76, 0, 0.24, 1] }}
+        transition={{ duration: 0.75, ease: [0.75, 0, 0.24, 1] }}
       >
         <div className="elem">
           <PerspectiveText label="Menu" />

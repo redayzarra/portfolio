@@ -16,7 +16,7 @@ const AboutMe = () => {
           className="rounded-lg"
         />
       </div>
-      <div className="flex flex-col space-y-10">
+      <div className="flex flex-col space-y-6 md:space-y-10">
         {/* About Cards */}
         <div className="grid grid-cols-3 gap-4">
           <AboutCard
