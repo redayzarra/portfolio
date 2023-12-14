@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import MenuButton from "./MenuButton";
 import { motion } from "framer-motion";
+import NavLinks from "./NavLinks";
 
 const variants = {
   open: {
@@ -32,7 +33,9 @@ const Menu = () => {
         animate={isActive ? "open" : "closed"}
         initial="closed"
         style={{ position: "absolute", top: 0, right: 0 }}
-      ></motion.div>
+      >
+        <NavLinks />
+      </motion.div>
       <MenuButton isActive={isActive} setIsActive={setIsActive} />
     </div>
   );
