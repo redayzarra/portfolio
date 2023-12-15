@@ -28,7 +28,7 @@ const MenuButton = ({ isActive, setIsActive }: Props) => {
 
 function PerspectiveText({ label }: { label: string }) {
   return (
-    <div className="perspective-text text-sm font-semibold">
+    <div className="perspective-text text-sm font-bold">
       <p>{label}</p>
       <p>{label}</p>
     </div>

@@ -128,7 +128,7 @@
       &:nth-of-type(2) {
         position: absolute;
         top: 100%;
-        background-color: black;
+        background-color: #00070e;
         color: white;
       }
 
@@ -173,25 +173,30 @@
 .menu {
   position: absolute;
   z-index: 100;
-  width: 300px;
-  height: 400px;
+  width: 275px;
+  height: 300px;
   background-color: #c6e7ce;
   border-radius: 25px;
 }
 
 .nav {
   height: 100%;
-  padding: 70px 40px 50px 20px;
+  padding: 65px 0px 0px 25px;
   box-sizing: border-box;
 
   .nav-body {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+
+    .nav-container {
+      perspective: 120px;
+      perspective-origin: bottom;
+    }
+
     a {
       color: black;
-      text-decoration: none;
-      font-size: 23px;
+      /* text-decoration: underline 1px; */
     }
   }
 }
