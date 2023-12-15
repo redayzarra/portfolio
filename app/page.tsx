@@ -9,12 +9,14 @@ import Title from "@/components/Title";
 export default function Home() {
   return (
     <div className="">
-      <Container>
-        <NavBar />
-        <Hello className="mt-10" />
-      </Container>
+      <div className="bg-gradient-to-t from-[#e3ffe0] via-white to-white">
+        <Container className="">
+          <NavBar />
+          <Hello className="mt-10" />
+        </Container>
+      </div>
       {/* Waves */}
-      <div className="spacer layer1 mt-4"></div>
+      <div className="spacer layer1 pt-4 bg-[#e3ffe0]"></div>
       <div className="bg-black text-background">
         <Container className="-mt-10">
           <Title heading="Get to know me" title="About Me" />
