@@ -13,8 +13,8 @@ const GlassCard = ({
   children,
   className,
   backgroundColor = "bg-zinc-950",
-  gradientSize = 200,
-  gradientPower = 0.2,
+  gradientSize = 300,
+  gradientPower = 0.15,
 }: PropsWithChildren<Props>) => {
   const cardRef = useRef<HTMLDivElement>(null);
 

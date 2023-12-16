@@ -4,6 +4,9 @@ import Experience from "@/components/Experience";
 import Hello from "@/components/Hello";
 import NavBar from "@/components/NavBar";
 import Title from "@/components/Title";
+import dynamic from "next/dynamic";
+
+
 
 export default function Home() {
   return (
