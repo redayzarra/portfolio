@@ -3,7 +3,11 @@
 import React, { PropsWithChildren, useRef, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-const SpringyDiv = ({ children }: PropsWithChildren<{}>) => {
+interface Props{
+  className?: string;
+}
+
+const SpringyDiv = ({ children, className }: PropsWithChildren<Props>) => {
   const ref = useRef<HTMLDivElement>(null);
 
   // Using useMotionValue for x and y
@@ -55,7 +59,7 @@ const SpringyDiv = ({ children }: PropsWithChildren<{}>) => {
     <motion.div
       ref={ref}
       style={{ x: smoothX, y: smoothY }}
-      className="hover:text-red-500 transition-colors"
+      className={`transition-colors ${className}`}
     >
       {children}
     </motion.div>

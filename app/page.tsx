@@ -1,12 +1,10 @@
 import AboutMe from "@/components/AboutMe";
-import Container from "@/components/MyComponents/Container";
-import Experience from "@/components/Experience";
+import Frontend from "@/components/Frontend";
 import Hello from "@/components/Hello";
+import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
+import Skills from "@/components/Skills";
 import Title from "@/components/Title";
-import dynamic from "next/dynamic";
-
-
 
 export default function Home() {
   return (
@@ -25,9 +23,10 @@ export default function Home() {
             <Title heading="Get to know me" title="About Me" />
             <AboutMe />
           </div>
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <Title heading="Explore my" title="Experience" />
-            <Experience />
+            <Frontend />
+            <Skills />
           </div>
         </Container>
       </div>
