@@ -206,6 +206,10 @@
   position: relative;
 }
 
+.glassy-card:hover::before {
+  opacity: 1;
+}
+
 .glassy-card::before {
   background: radial-gradient(
     var(--circle-size) circle at var(--mouse-x) var(--mouse-y),
@@ -213,11 +217,13 @@
     transparent 40%
   );
   border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
   position: absolute;
-  top: 0px;
+  height: 100%;
   width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+  content: "";
   z-index: 2;
 }
