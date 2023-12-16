@@ -1,41 +1,28 @@
 import React from "react";
 import MagIcon from "./SpringyDiv";
 import { FaHtml5 } from "react-icons/fa6";
-import GlassyCard from "./GlassyCard";
+import GlassCard from "./GlassCard";
 
 const Experience = () => {
   return (
     <div className="flex flex-col justify center">
       - Frontend - Backend - Machine Learning
       <div className="flex gap-2 text-zinc-500">
-        <GlassyCard
-          gradientSize={200}
-          gradientPower={0.25}
-          className=" h-24 w-24 rounded-lg p-2"
-        >
-          This is a glassy card
-        </GlassyCard>
-        <GlassyCard
-          gradientSize={200}
-          gradientPower={0.25}
-          className="h-24 w-24 rounded-lg p-2"
-        >
-          This is my second card
-        </GlassyCard>
-        <GlassyCard
-          gradientSize={200}
-          gradientPower={0.25}
-          className="h-24 w-24 rounded-lg p-2"
-        >
-          This is the third card
-        </GlassyCard>
-        <GlassyCard
-          gradientSize={200}
-          gradientPower={0.25}
-          className="h-24 w-24 rounded-lg p-2"
-        >
-          Lorem ipsum dolor.
-        </GlassyCard>
+        <GlassCard className="rounded-lg p-2">
+          Lorem ipsum dolor sit amet.
+        </GlassCard>
+        <GlassCard className="rounded-lg p-2">
+          Quos nesciunt fuga perspiciatis neque.
+        </GlassCard>
+        <GlassCard className="rounded-lg p-2">
+          Autem modi accusamus consequuntur quaerat?
+        </GlassCard>
+        <GlassCard className="rounded-lg p-2">
+          Modi aspernatur optio vitae nobis.
+        </GlassCard>
+        <GlassCard className="rounded-lg p-2">
+          Repellat eius placeat porro est?
+        </GlassCard>
       </div>
       <div className="flex mt-24 items-center justify-center">
         <MagIcon>

@@ -201,16 +201,16 @@
   }
 }
 
-.glassy-card {
+.glass-card {
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
 
-.glassy-card:hover::before {
+.glass-card:hover::before {
   opacity: 1;
 }
 
-.glassy-card::before {
+.glass-card::before {
   background: radial-gradient(
     var(--circle-size) circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, var(--gradient-power)),
@@ -226,4 +226,12 @@
   transition: opacity 500ms;
   content: "";
   z-index: 2;
+}
+
+.glass-card > .glass-card-content {
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  background-color: inherit;
+  border-radius: inherit;
+  margin: 1;
 }
