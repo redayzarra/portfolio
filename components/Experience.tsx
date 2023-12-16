@@ -1,7 +1,7 @@
 import React from "react";
-import MagIcon from "./SpringyDiv";
+import MagIcon from "./MyComponents/SpringyDiv";
 import { FaHtml5 } from "react-icons/fa6";
-import GlassCard from "./GlassCard";
+import GlassCard from "./MyComponents/GlassCard";
 
 const Experience = () => {
   return (

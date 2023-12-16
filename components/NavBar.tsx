@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "./MyComponents/Logo";
 import Menu from "./Menu";
 
 const NavBar = () => {

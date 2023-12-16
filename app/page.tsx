@@ -1,5 +1,5 @@
 import AboutMe from "@/components/AboutMe";
-import Container from "@/components/Container";
+import Container from "@/components/MyComponents/Container";
 import Experience from "@/components/Experience";
 import Hello from "@/components/Hello";
 import NavBar from "@/components/NavBar";
