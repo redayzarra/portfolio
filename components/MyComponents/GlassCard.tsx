@@ -12,13 +12,14 @@ interface Props {
 const GlassCard = ({
   children,
   className,
-  backgroundColor = "bg-zinc-950", 
+  backgroundColor = "bg-zinc-950",
   gradientSize = 200,
   gradientPower = 0.2,
 }: PropsWithChildren<Props>) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Set CSS variables for gradient size and power
     if (cardRef.current) {
       cardRef.current.style.setProperty("--circle-size", `${gradientSize}px`);
       cardRef.current.style.setProperty("--gradient-power", `${gradientPower}`);
@@ -26,22 +27,25 @@ const GlassCard = ({
   }, [gradientSize, gradientPower]);
 
   const handleOnMouseMove = (e: MouseEvent<HTMLDivElement>) => {
-    const target = e.currentTarget;
-    const rect = target.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    // Update CSS variables based on mouse position over the card
+    if (cardRef.current) {
+      const rect = cardRef.current.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-    target.style.setProperty("--mouse-x", `${x}px`);
-    target.style.setProperty("--mouse-y", `${y}px`);
+      cardRef.current.style.setProperty("--mouse-x", `${x}px`);
+      cardRef.current.style.setProperty("--mouse-y", `${y}px`);
+    }
   };
 
   return (
     <div
       ref={cardRef}
-      className={`glass-card ${className} ${backgroundColor}`}
+      className={`glass-card ${className || ''} ${backgroundColor}`}
       onMouseMove={handleOnMouseMove}
     >
-      {children}
+      <div className="glass-card-border"></div>
+      <div className={`glass-card-content ${backgroundColor}`}>{children}</div>
     </div>
   );
 };
