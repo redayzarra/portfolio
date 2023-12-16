@@ -200,3 +200,24 @@
     }
   }
 }
+
+.glassy-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.glassy-card::before {
+  background: radial-gradient(
+    var(--circle-size) circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, var(--gradient-power)),
+    transparent 40%
+  );
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}

@@ -3,7 +3,7 @@
 import React, { PropsWithChildren, useRef, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-const MagIcon = ({ children }: PropsWithChildren<{}>) => {
+const SpringyDiv = ({ children }: PropsWithChildren<{}>) => {
   const ref = useRef<HTMLDivElement>(null);
 
   // Using useMotionValue for x and y
@@ -11,7 +11,7 @@ const MagIcon = ({ children }: PropsWithChildren<{}>) => {
   const y = useMotionValue(0);
 
   // Smooth animation options
-  const smoothOptions = { damping: 15, stiffness: 150, mass: 0.1 };
+  const smoothOptions = { damping: 5, stiffness: 250, mass: 0.25 };
   const smoothX = useSpring(x, smoothOptions);
   const smoothY = useSpring(y, smoothOptions);
 
@@ -29,7 +29,7 @@ const MagIcon = ({ children }: PropsWithChildren<{}>) => {
     }
   };
 
-  // Reset the icon's position when the mouse stops bothering it.
+  // Reset the icon's position when the mouse stops bothering it
   const mouseLeave = () => {
     x.set(0);
     y.set(0);
@@ -52,10 +52,14 @@ const MagIcon = ({ children }: PropsWithChildren<{}>) => {
   }, []);
 
   return (
-    <motion.div ref={ref} style={{ x: smoothX, y: smoothY }}>
+    <motion.div
+      ref={ref}
+      style={{ x: smoothX, y: smoothY }}
+      className="hover:text-red-500 transition-colors"
+    >
       {children}
     </motion.div>
   );
 };
 
-export default MagIcon;
+export default SpringyDiv;
