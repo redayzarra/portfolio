@@ -17,6 +17,7 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@react-three/fiber": "^8.15.12",
     "@studio-freight/lenis": "^1.0.29",
+    "@tensorflow/tfjs": "^4.15.0",
     "@thednp/dommatrix": "^2.0.6",
     "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
