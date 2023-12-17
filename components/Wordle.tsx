@@ -1,31 +1,37 @@
 "use client";
 
-import * as React from "react";
-import * as z from "zod";
-import { SubmitHandler, useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useToast } from "./ui/use-toast";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
+  CardDescription,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import {
   Form,
-  FormField,
   FormControl,
-  FormMessage,
+  FormField,
   FormItem,
+  FormMessage,
 } from "@/components/ui/form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
 import { Input } from "./ui/input";
+import { useToast } from "./ui/use-toast";
 
 const Wordle = () => {
   // Fetching today's date in ISO format (YYYY-MM-DD)
   const today = new Date();
   const dateString = today.toISOString().split("T")[0];
+
+  // Format the date in a user-friendly format
+  const formattedDateString = today.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
   // Setting up toast and form
   const { toast } = useToast();
@@ -44,16 +50,6 @@ const Wordle = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      // Create a new Date object, which will be set to the current date and time of the user's system
-      const currentDate = new Date();
-
-      // You can format this date as needed; for instance, in ISO format:
-      const isoDateString = currentDate.toISOString();
-
-      // Or, if you just need the date part in YYYY-MM-DD format:
-      const dateString = currentDate.toISOString().split("T")[0];
-
-      console.log("Current Date (ISO):", isoDateString);
       console.log("Current Date (YYYY-MM-DD):", dateString);
 
       const response = await fetch(
@@ -61,7 +57,7 @@ const Wordle = () => {
       );
       const data = await response.json();
 
-      console.log(`${data.answer.toLowerCase()} and ${dateString}`);
+      // console.log(`${data.answer.toLowerCase()} and ${dateString}`);
 
       if (values.answer.toLowerCase() === data.answer.toLowerCase()) {
         // User guessed the correct answer
@@ -77,8 +73,9 @@ const Wordle = () => {
           variant: "destructive",
         });
       }
+
+      // Error handling
     } catch (error) {
-      // Handle errors
       toast({
         title: "Something went wrong.",
         description:
@@ -90,7 +87,6 @@ const Wordle = () => {
 
   // Function to handle cancel action
   const handleCancel = () => {
-    // Logic to handle cancel action, e.g., reset the form
     form.reset();
   };
 
@@ -117,7 +113,7 @@ const Wordle = () => {
                     <Input
                       {...field}
                       id="answer"
-                      placeholder={`Wordle answer for ${dateString}`}
+                      placeholder={`Wordle answer for ${formattedDateString}`}
                       disabled={isSubmitting}
                       className="text-black"
                     />

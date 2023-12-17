@@ -7,7 +7,7 @@ import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
 import { Separator } from "@/components/ui/separator";
-import { frontendSkills } from "@/lib/constants";
+import { backendSkills, frontendSkills } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -32,6 +32,8 @@ export default function Home() {
             <Skills cols={5} title="Frontend Skills" skills={frontendSkills} />
             <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
             <Backend />
+            <Skills cols={5} title="Backend Skills" skills={backendSkills} />
+            <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
           </div>
         </Container>
       </div>

@@ -20,7 +20,7 @@ const Skills = ({
       <h2 className="flex items-center justify-center font-semibold text-lg text-white">
         {title}
       </h2>
-      <div className={`grid grid-cols-3 md:grid-cols-${cols} gap-3`}>
+      <div className={`grid grid-cols-3 md:grid-cols-${cols} gap-2`}>
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center p-2">
             <SpringyDiv className="hover:text-red-500 mb-1">
