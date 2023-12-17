@@ -29,7 +29,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center">
             <Title heading="Explore my" title="Experience" />
             <Frontend />
-            <Skills title="Frontend Skills" skills={frontendSkills} />
+            <Skills cols={5} title="Frontend Skills" skills={frontendSkills} />
             <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
             <Backend />
           </div>
