@@ -5,6 +5,7 @@ import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
+import { frontendSkills } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center">
             <Title heading="Explore my" title="Experience" />
             <Frontend />
-            <Skills />
+            <Skills title="Frontend Skills" skills={frontendSkills} />
           </div>
         </Container>
       </div>
