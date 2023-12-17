@@ -1,10 +1,12 @@
 import AboutMe from "@/components/AboutMe";
+import Backend from "@/components/Backend";
 import Frontend from "@/components/Frontend";
 import Hello from "@/components/Hello";
 import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
+import { Separator } from "@/components/ui/separator";
 import { frontendSkills } from "@/lib/constants";
 
 export default function Home() {
@@ -28,6 +30,8 @@ export default function Home() {
             <Title heading="Explore my" title="Experience" />
             <Frontend />
             <Skills title="Frontend Skills" skills={frontendSkills} />
+            <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
+            <Backend />
           </div>
         </Container>
       </div>

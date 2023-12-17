@@ -1,18 +1,14 @@
-import dynamic from "next/dynamic";
+import Wordle from "./Wordle";
 
-const Earth = dynamic(() => import("@/components/MyComponents/Earth"), {
-  ssr: false,
-});
-
-const Frontend = () => {
+const Backend = () => {
   return (
     <div className="items-center justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1">
       <div className="flex items-center justify-center h-72 max-w-72">
-        <Earth />
+        <Wordle />
       </div>
       <div className="flex flex-col space-y-3">
         <h1 className="text-xl font-semibold mt-4 md:mt-0 flex items-center justify-center md:block">
-          Frontend Development
+          Backend Development
         </h1>
         <p className="text-muted-foreground">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
@@ -24,4 +20,4 @@ const Frontend = () => {
   );
 };
 
-export default Frontend;
+export default Backend;

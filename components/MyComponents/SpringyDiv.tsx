@@ -15,7 +15,7 @@ const SpringyDiv = ({ children, className }: PropsWithChildren<Props>) => {
   const y = useMotionValue(0);
 
   // Smooth animation options
-  const smoothOptions = { damping: 5, stiffness: 250, mass: 0.25 };
+  const smoothOptions = { damping: 6, stiffness: 250, mass: 0.25 };
   const smoothX = useSpring(x, smoothOptions);
   const smoothY = useSpring(y, smoothOptions);
 
