@@ -15,6 +15,7 @@ import {
   FaPython,
   FaRProject,
   FaReact,
+  FaUnity,
 } from "react-icons/fa6";
 import { FiFramer } from "react-icons/fi";
 import { GrMysql } from "react-icons/gr";
@@ -22,7 +23,6 @@ import {
   SiAxios,
   SiExpress,
   SiFlask,
-  SiGooglecloud,
   SiJest,
   SiKeras,
   SiNextdotjs,
@@ -31,12 +31,10 @@ import {
   SiPytorch,
   SiScikitlearn,
   SiTailwindcss,
-  SiTensorflow,
+  SiTensorflow
 } from "react-icons/si";
-import { TbBrandThreejs } from "react-icons/tb";
-import { FcHeatMap } from "react-icons/fc";
 import { SlGraph } from "react-icons/sl";
-import { FaUnity } from "react-icons/fa";
+import { TbBrandThreejs } from "react-icons/tb";
 
 const iconSize = 75;
 
@@ -82,5 +80,5 @@ export const machineLearningSkills = [
   { icon: <FaRProject size={iconSize} />, name: "R (langugage)" },
   { icon: <FaAws size={iconSize} />, name: "AWS" },
   { icon: <BiLogoGoogleCloud size={iconSize} />, name: "Google Cloud" },
-  { icon: <FaUnity size={iconSize} />, name: "Unity (RL)" },
+  { icon: <FaUnity size={iconSize} />, name: "Unity3D (RL)" },
 ];

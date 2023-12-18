@@ -11,7 +11,7 @@ const Handwriting = () => {
           network (CNN).
         </CardDescription>
       </CardHeader>
-      <CardContent></CardContent>
+      <CardContent>TODO: Make machine learning model to classify written digits.</CardContent>
     </Card>
   );
 };

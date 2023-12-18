@@ -5,6 +5,7 @@ import Hello from "@/components/Hello";
 import MachineLearning from "@/components/MachineLearning";
 import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
 import { Separator } from "@/components/ui/separator";
@@ -44,6 +45,10 @@ export default function Home() {
               title="Machine Learning Skills"
               skills={machineLearningSkills}
             />
+          </div>
+          <div>
+            <Title heading="Browse My Recent" title="Projects" />
+            <Projects />
           </div>
         </Container>
       </div>
