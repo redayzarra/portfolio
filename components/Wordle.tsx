@@ -53,13 +53,14 @@ const Wordle = () => {
       // console.log("Current Date (YYYY-MM-DD):", dateString);
       // console.log("Formatted Current Date (YYYY-MM-DD):", formattedDateString);
 
+      // for the next 27 days
       const response = await fetch(
         `https://neal.fun/api/password-game/wordle?date=${dateString}`
       );
       const data = await response.json();
 
       // Test to ensure answer:
-      // console.log(`${data.answer.toLowerCase()} and ${dateString}`);
+      console.log(`${data.answer.toLowerCase()} and ${dateString}`);
 
       if (values.answer.toLowerCase() === data.answer.toLowerCase()) {
         // Correct answer
@@ -93,7 +94,7 @@ const Wordle = () => {
   };
 
   return (
-    <Card className="w-[350px] bg-black text-white border-zinc-800">
+    <Card className="w-[350px] dark border-zinc-800">
       <CardHeader>
         <CardTitle>What is today's Wordle?</CardTitle>
         <CardDescription>
@@ -124,25 +125,10 @@ const Wordle = () => {
                 </FormItem>
               )}
             />
-            <div className="flex justify-between">
-              <Button
-                type="button" // Important to specify 'button' to prevent form submission
-                onClick={handleCancel}
-                variant="ghost"
-                size="sm"
-                className="transition-all"
-              >
-                Cancel
-              </Button>
-              <Button
-                disabled={isSubmitting}
-                type="submit"
-                size="sm"
-                className="bg-red-400 hover:bg-red-600"
-              >
-                Submit
-              </Button>
-            </div>
+
+            <Button disabled={isSubmitting} type="submit" size="sm">
+              Submit
+            </Button>
           </form>
         </Form>
       </CardContent>

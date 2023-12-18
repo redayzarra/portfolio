@@ -7,11 +7,12 @@ import { Mesh, TextureLoader } from "three";
 
 const EarthMesh = () => {
   const meshRef = useRef<Mesh>();
-  const animationSpeed = 0.003;
+  const animationSpeed = 0.004;
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.y += animationSpeed;
+      meshRef.current.rotation.y -= animationSpeed;
+      // meshRef.current.rotation.x -= animationSpeed / 10;
     }
   });
 
@@ -32,8 +33,8 @@ const EarthMesh = () => {
 const Earth = () => {
   return (
     <Canvas>
-      <ambientLight intensity={5} />
-      <directionalLight intensity={3} position={[1, 0, -0.25]} />
+      <ambientLight intensity={1} />
+      <directionalLight intensity={5} position={[1, 0, 0.25]} />
       <EarthMesh />
       <OrbitControls />
     </Canvas>
