@@ -15,6 +15,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "@react-three/drei": "^9.92.4",
     "@react-three/fiber": "^8.15.12",
     "@studio-freight/lenis": "^1.0.29",
     "@tensorflow/tfjs": "^4.15.0",
