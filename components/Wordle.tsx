@@ -20,18 +20,17 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { Input } from "./ui/input";
 import { useToast } from "./ui/use-toast";
+import formatDate from "@/lib/formatDate";
 
 const Wordle = () => {
-  // Fetching today's date in ISO format (YYYY-MM-DD)
+  // Format the date in a user-friendly format, and calculate ISO format
   const today = new Date();
-  const dateString = today.toISOString().split("T")[0];
-
-  // Format the date in a user-friendly format
   const formattedDateString = today.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
   });
+  const dateString = formatDate(formattedDateString);
 
   // Setting up toast and form
   const { toast } = useToast();
@@ -50,17 +49,20 @@ const Wordle = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      console.log("Current Date (YYYY-MM-DD):", dateString);
+      // Tests to see what my constants look like:
+      // console.log("Current Date (YYYY-MM-DD):", dateString);
+      // console.log("Formatted Current Date (YYYY-MM-DD):", formattedDateString);
 
       const response = await fetch(
         `https://neal.fun/api/password-game/wordle?date=${dateString}`
       );
       const data = await response.json();
 
+      // Test to ensure answer:
       // console.log(`${data.answer.toLowerCase()} and ${dateString}`);
 
       if (values.answer.toLowerCase() === data.answer.toLowerCase()) {
-        // User guessed the correct answer
+        // Correct answer
         toast({
           title: "Correct!",
           description: "That is today's Wordle answer.",
