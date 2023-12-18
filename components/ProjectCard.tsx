@@ -66,7 +66,7 @@ const ProjectCard = () => {
       <div className="screen-content">
         <div className="screen-user">
           <span
-            className="name text-4xl font-extrabold pt-6"
+            className="name text-4xl font-extrabold pt-6 relative"
             ref={nameRef}
             data-value="AUTOPILOT"
           >
