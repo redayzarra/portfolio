@@ -32,7 +32,7 @@ const EarthMesh = () => {
 
 const Earth = () => {
   return (
-    <Canvas>
+    <Canvas className="">
       <ambientLight intensity={1} />
       <directionalLight intensity={5} position={[1, 0, 0.25]} />
       <EarthMesh />

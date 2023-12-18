@@ -5,9 +5,8 @@ import { Calendar } from "@/components/ui/calendar";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card";
 import {
   Form,
@@ -84,7 +83,7 @@ const BetterWordle = () => {
   return (
     <Card className="w-[350px] dark border-zinc-800">
       <CardHeader className="space-y-2">
-        <CardTitle>Wordle Answer Key</CardTitle>
+        <CardTitle>Future Wordle Answers</CardTitle>
         <p className="text-muted-foreground text-sm">
           Get the <span className="font-bold underline">official future</span>{" "}
           Wordle answer for your selected date.
@@ -152,7 +151,7 @@ const BetterWordle = () => {
               </Button>
               {answer && (
                 <p className="pr-5">
-                  Answer: <span className="font-black">{answer}</span>
+                  Answer: <span className="font-black text-green-600">{answer}</span>
                 </p>
               )}
             </div>
