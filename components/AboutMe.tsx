@@ -5,9 +5,9 @@ import AboutCard from "./AboutCard";
 
 const AboutMe = () => {
   return (
-    <div className="justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1">
+    <div className="justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1 xl:px-16">
       {/* My Image */}
-      <div className="flex items-center justify-center relative mx-auto h-72 w-72 overflow-hidden">
+      <div className="flex items-center justify-center relative mx-auto h-[20rem] w-[22rem] overflow-hidden">
         <Image
           src={me}
           alt="My Picture"

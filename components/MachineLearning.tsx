@@ -2,7 +2,7 @@ import Handwriting from "./Handwriting";
 
 const MachineLearning = () => {
   return (
-    <div className="items-center justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1">
+    <div className="items-center justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1 xl:px-16">
       <div className="flex items-center justify-center h-72 max-w-72">
         <Handwriting />
       </div>

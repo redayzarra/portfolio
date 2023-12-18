@@ -10,7 +10,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
+    --primary: 33 150 243;
     --primary-foreground: 0 0% 98%;
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -58,6 +58,7 @@
   }
 }
 
+/* Waves */
 .spacer {
   aspect-ratio: 960/200;
   width: 100%;
@@ -70,6 +71,7 @@
   background-image: url("/images/under_the_ocean2.svg");
 }
 
+/* Old Nav Links */
 .nav-link,
 .nav-button {
   position: relative;
@@ -92,18 +94,7 @@
   font-weight: bold;
 }
 
-.cursor {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  position: fixed;
-  border-radius: 50%;
-}
-
-.white-cursor {
-  background-color: white;
-}
-
+/* Fancy Menu Button */
 .menu-button {
   height: 40px;
   width: 80px;
@@ -201,6 +192,7 @@
   }
 }
 
+/* Fancy Card with Gradient */
 .glass-card {
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -250,13 +242,245 @@
   z-index: 2;
 }
 
-.earth{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* The Planet Earth */
+.earth {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    img{
-        height: 100%;
-    }
+  img {
+    height: 100%;
+  }
 }
+
+/* Really Cool Project Card */
+.screen {
+  /* width: 400px; */
+  display: flex;
+  border: 3px solid rgb(var(--primary) / 80%);
+  aspect-ratio: 14 / 16;
+  border-radius: 1rem;
+  background-color: rgb(var(--primary) / 15%);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.screen:after,
+.screen:before {
+  content: "";
+  height: 5px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  translate: -50% 0%;
+  background-color: white;
+}
+
+.screen:before {
+  width: 15%;
+  top: 0rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.screen:after {
+  width: 25%;
+  bottom: 0rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+.screen-overlay {
+  background: linear-gradient(
+    rgb(var(--primary) / 0.15),
+    rgb(var(--primary) / 0.15) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  height: 100%;
+  width: 100%;
+  animation: pan-overlay 22s infinite linear;
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  top: 0px;
+}
+
+@keyframes pan-image {
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  20% {
+    background-position: 30% 35%;
+    background-size: 200%;
+  }
+
+  20.0001% {
+    /* -- View 2 -- */
+    background-position: 60% 85%;
+    background-size: 500%;
+  }
+
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
+  }
+
+  40.0001% {
+    /* -- View 3 -- */
+    background-position: 80% 42%;
+    background-size: 300%;
+  }
+
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+
+  60.0001% {
+    /* -- View 4 -- */
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+
+  80.0001% {
+    /* -- View 5 -- */
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 72% 14%;
+    background-size: 300%;
+  }
+}
+
+.screen > .screen-image {
+  background-image: url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-size: 300%;
+  background-position: 0% 0%;
+  filter: sepia(100%) hue-rotate(160deg);
+  opacity: 0.6;
+  animation: pan-image 15s linear infinite;
+}
+
+.screen > .screen-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  gap: 4rem;
+  position: relative;
+  z-index: 3;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid rgb(var(--primary) / 50%);
+  border-radius: 0.6rem;
+}
+
+.screen-icon {
+  color: white;
+  font-size: 4rem;
+  filter: drop-shadow(0px 0px 4px white);
+}
+
+.screen > .screen-content > .screen-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.screen > .screen-content > .screen-user:before,
+.screen > .screen-content > .screen-user:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  background-color: rgb(var(--primary));
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px 3px rgb(var(--primary) / 60%);
+}
+
+.screen > .screen-content > .screen-user:before {
+  height: 2px;
+  width: 50px;
+  translate: -20px -1rem;
+  opacity: 0.75;
+}
+
+.screen > .screen-content > .screen-user:after {
+  height: 3px;
+  width: 30px;
+  translate: 26px calc(-1rem - 0.5px);
+}
+
+.screen > .screen-content > .screen-user > .name {
+  position: relative;
+  /* font-size: 4.25rem; */
+  /* font-weight: 400; */
+}
+
+.screen > .screen-content > .screen-user > .name:before,
+.screen > .screen-content > .screen-user > .name:after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.screen > .screen-content > .screen-user > .name:before {
+  top: 55%;
+  right: -1.5rem;
+}
+
+.screen > .screen-content > .screen-user > .name:after {
+  top: 45%;
+  left: -1.5rem;
+}
+
+.my-label {
+  opacity: 0.8;
+  /* font-size: 1.5rem; */
+  text-shadow: 0px 0px 0.5rem white;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* .screen > .screen-content > .screen-user > .link:is(:hover, :focus) {
+  text-decoration: underline;
+} */
