@@ -76,7 +76,7 @@ const ProjectCard = ({
     >
       <div className="screen-image" style={backgroundImageStyle}></div>
       <div className="screen-overlay"></div>
-      <div className="screen-content">
+      <div className="screen-content mx-4">
         <div className="screen-user">
           <span
             className="name text-4xl font-extrabold pt-6 relative truncate"
@@ -99,7 +99,7 @@ const ProjectCard = ({
             </a>
             <p className="my-label text-sm text-center w-full">GitHub</p>
           </div>
-          {!videoUrl ? (
+          {!videoUrl && !demoUrl ? null : !videoUrl ? (
             <div className="flex flex-col items-center space-y-1">
               <a
                 href={demoUrl}
@@ -121,7 +121,7 @@ const ProjectCard = ({
               >
                 <FaYoutube size={50} />
               </a>
-              <p className="my-label text-sm text-center w-full">video</p>
+              <p className="my-label text-sm text-center w-full">Video</p>
             </div>
           )}
         </div>
