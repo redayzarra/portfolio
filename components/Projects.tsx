@@ -7,7 +7,6 @@ interface Project {
   githubUrl: string;
   image: string;
   demoUrl: string;
-  isVideo: boolean;
   videoUrl: string;
 }
 
@@ -20,8 +19,7 @@ const Projects = ({ projects }: Props) => {
     <div className="flex items-center justify-center">
       <div className="grid gap-14 grid-cols-1 md:grid-cols-2 items-center justify-center">
         {projects.map((project) => {
-          const { title, label, githubUrl, image, demoUrl, isVideo, videoUrl } =
-            project;
+          const { title, label, githubUrl, image, demoUrl, videoUrl } = project;
           return (
             <ProjectCard
               key={title}
@@ -30,7 +28,6 @@ const Projects = ({ projects }: Props) => {
               githubUrl={githubUrl}
               image={image}
               demoUrl={demoUrl}
-              isVideo={isVideo}
               videoUrl={videoUrl}
             />
           );

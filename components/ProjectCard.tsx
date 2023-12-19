@@ -10,7 +10,6 @@ interface Props {
   githubUrl: string;
   image: string;
   demoUrl: string;
-  isVideo: boolean;
   videoUrl: string;
 }
 
@@ -20,7 +19,6 @@ const ProjectCard = ({
   githubUrl,
   image,
   demoUrl,
-  isVideo,
   videoUrl,
 }: Props) => {
   const screenRef = useRef<HTMLDivElement>(null);
@@ -101,7 +99,7 @@ const ProjectCard = ({
             </a>
             <p className="my-label text-sm text-center w-full">GitHub</p>
           </div>
-          {!isVideo ? (
+          {!videoUrl ? (
             <div className="flex flex-col items-center space-y-1">
               <a
                 href={demoUrl}
