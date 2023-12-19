@@ -1,17 +1,28 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { Button } from "./ui/button";
-import { FaCodepen, FaGithub } from "react-icons/fa6";
-import { CgWebsite } from "react-icons/cg";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { useEffect, useRef } from "react";
+import { FaGithub, FaYoutube } from "react-icons/fa6";
+import { MdWeb } from "react-icons/md";
 
-const ProjectCard = () => {
+interface Props {
+  title: string;
+  label: string;
+  githubUrl: string;
+  image: string;
+  demoUrl: string;
+  isVideo: boolean;
+  videoUrl: string;
+}
+
+const ProjectCard = ({
+  title,
+  label,
+  githubUrl,
+  image,
+  demoUrl,
+  isVideo,
+  videoUrl,
+}: Props) => {
   const screenRef = useRef<HTMLDivElement>(null);
   const nameRef = useRef<HTMLSpanElement>(null);
 
@@ -42,7 +53,7 @@ const ProjectCard = () => {
 
           iteration += 1 / 3;
         }
-      }, 30) as unknown as number; // Cast the return value of setInterval to a number
+      }, 30) as unknown as number;
     };
 
     const screenElement = screenRef.current;
@@ -56,43 +67,65 @@ const ProjectCard = () => {
     };
   }, []);
 
+  const backgroundImageStyle = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
     <div
       className="screen w-80 items-center justify-center flex"
       ref={screenRef}
     >
-      <div className="screen-image"></div>
+      <div className="screen-image" style={backgroundImageStyle}></div>
       <div className="screen-overlay"></div>
       <div className="screen-content">
         <div className="screen-user">
           <span
-            className="name text-4xl font-extrabold pt-6 relative"
+            className="name text-4xl font-extrabold pt-6 relative truncate"
             ref={nameRef}
-            data-value="AUTOPILOT"
+            data-value={title}
           >
-            AUTOPILOT
+            {title}
           </span>
-          <p className="my-label truncate text-lg">PERSONAL PROJECT</p>
+          <p className="my-label truncate text-lg">{label}</p>
         </div>
         <div className="flex items-center justify-between space-x-10">
           <div className="flex flex-col items-center space-y-1">
             <a
-              href="https://github.com"
+              href={githubUrl}
               className="flex screen-icon items-center justify-center"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub size={50} />
             </a>
             <p className="my-label text-sm text-center w-full">GitHub</p>
           </div>
-          <div className="flex flex-col items-center space-y-1">
-            <a
-              href="https://youtube.com"
-              className="flex screen-icon items-center justify-center"
-            >
-              <CgWebsite size={50} />
-            </a>
-            <p className="my-label text-sm text-center w-full">Demo</p>
-          </div>
+          {!isVideo ? (
+            <div className="flex flex-col items-center space-y-1">
+              <a
+                href={demoUrl}
+                className="flex screen-icon items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MdWeb size={50} />
+              </a>
+              <p className="my-label text-sm text-center w-full">Demo</p>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center space-y-1">
+              <a
+                href={videoUrl}
+                className="flex screen-icon items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube size={50} />
+              </a>
+              <p className="my-label text-sm text-center w-full">video</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

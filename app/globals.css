@@ -305,14 +305,14 @@
 .screen-overlay {
   background: linear-gradient(
     rgb(var(--primary) / 0.15),
-    rgb(var(--primary) / 0.15) 3px,
-    transparent 3px,
+    rgb(var(--primary) / 0.15) 2px,
+    transparent 2px,
     transparent 9px
   );
-  background-size: 100% 9px;
+  background-size: 100% 6px;
   height: 100%;
   width: 100%;
-  animation: pan-overlay 22s infinite linear;
+  animation: pan-overlay 25s infinite linear;
   position: absolute;
   z-index: 2;
   left: 0px;
@@ -376,7 +376,7 @@
 }
 
 .screen > .screen-image {
-  background-image: url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1515266591878-f93e32bc5937?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"); */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -385,8 +385,8 @@
   top: 0px;
   background-size: 300%;
   background-position: 0% 0%;
-  filter: sepia(100%) hue-rotate(160deg);
-  opacity: 0.6;
+  filter: contrast(50%) grayscale(20%);
+  opacity: 0.5;
   animation: pan-image 15s linear infinite;
 }
 
@@ -411,7 +411,7 @@
   filter: drop-shadow(0px 0px 4px white);
 }
 
-.screen > .screen-content > .screen-user{
+.screen > .screen-content > .screen-user {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,26 +442,6 @@
   translate: 26px calc(-1rem - 0.5px);
 }
 
-.screen > .screen-content > .screen-user > .name:before,
-.screen > .screen-content > .screen-user > .name:after {
-  content: "";
-  height: 4px;
-  width: 4px;
-  position: absolute;
-  border: 2px solid white;
-  border-radius: 2px;
-}
-
-.screen > .screen-content > .screen-user > .name:before {
-  top: 60%;
-  right: -1.5rem;
-}
-
-.screen > .screen-content > .screen-user > .name:after {
-  top: 60%;
-  left: -1.5rem;
-}
-
 .my-label {
   opacity: 0.8;
   /* font-size: 1.5rem; */
@@ -474,7 +454,3 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-/* .screen > .screen-content > .screen-user > .link:is(:hover, :focus) {
-  text-decoration: underline;
-} */

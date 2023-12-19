@@ -31,7 +31,7 @@ import {
   SiPytorch,
   SiScikitlearn,
   SiTailwindcss,
-  SiTensorflow
+  SiTensorflow,
 } from "react-icons/si";
 import { SlGraph } from "react-icons/sl";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -81,4 +81,52 @@ export const machineLearningSkills = [
   { icon: <FaAws size={iconSize} />, name: "AWS" },
   { icon: <BiLogoGoogleCloud size={iconSize} />, name: "Google Cloud" },
   { icon: <FaUnity size={iconSize} />, name: "Unity3D (RL)" },
+];
+
+export const projects = [
+  {
+    title: "AutoPilot",
+    label: "Drone App",
+    githubUrl: "https://github.com/redayzarra/AutoPilot",
+    demoUrl: "",
+    image: "/images/projects/AutoPilot.webp",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+  },
+  {
+    title: "AlphaZero",
+    label: "chess bot",
+    githubUrl: "https://github.com/redayzarra/RookNoFurther",
+    demoUrl: "",
+    image: "/images/projects/ChessBot.webp",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+  },
+  {
+    title: "AutoPilot",
+    label: "Personal Project",
+    githubUrl: "https://github.com/redayzarra/AutoPilot",
+    demoUrl: "",
+    image: "/images/projects/AutoPilot.webp",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+  },
+  {
+    title: "AutoPilot",
+    label: "Personal Project",
+    githubUrl: "https://github.com/redayzarra/AutoPilot",
+    demoUrl: "",
+    image: "/images/projects/AutoPilot.webp",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+  },
+  {
+    title: "AutoPilot",
+    label: "Personal Project",
+    githubUrl: "https://github.com/redayzarra/AutoPilot",
+    demoUrl: "",
+    image: "/images/projects/AutoPilot.webp",
+    isVideo: true,
+    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+  },
 ];

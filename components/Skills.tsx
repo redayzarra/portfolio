@@ -6,15 +6,13 @@ interface Skill {
   name: string;
 }
 
-const Skills = ({
-  skills = [],
-  title,
-  cols = 5,
-}: {
+interface Props {
   skills: Skill[];
   title: string;
   cols?: number;
-}) => {
+}
+
+const Skills = ({ skills = [], title, cols = 5 }: Props) => {
   return (
     <div className="mt-6 dark text-muted-foreground border-1 flex flex-col items-center p-4 justify-center rounded-md space-y-4">
       <h2 className="flex items-center justify-center font-semibold text-lg text-white">

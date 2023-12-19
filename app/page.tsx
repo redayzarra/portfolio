@@ -13,6 +13,7 @@ import {
   backendSkills,
   frontendSkills,
   machineLearningSkills,
+  projects,
 } from "@/lib/constants";
 
 export default function Home() {
@@ -48,7 +49,7 @@ export default function Home() {
           </div>
           <div>
             <Title heading="Browse My Recent" title="Projects" />
-            <Projects />
+            <Projects projects={projects} />
           </div>
         </Container>
       </div>

@@ -42,7 +42,9 @@ const Hello = ({ className }: { className?: string }) => {
               </Button>
             </a>
             <a href="">
-              <Button className="rounded-full">Contact</Button>
+              <Button className="rounded-full" variant="outline">
+                Contact
+              </Button>
             </a>
           </div>
           <div className="mt-4 flex items-center justify-center space-x-4">
