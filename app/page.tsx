@@ -8,7 +8,6 @@ import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
-import WorkingOn from "@/components/WorkingOn";
 import { Separator } from "@/components/ui/separator";
 import {
   backendSkills,

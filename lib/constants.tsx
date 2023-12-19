@@ -90,7 +90,7 @@ export const projects = [
     githubUrl: "https://github.com/redayzarra/KnightVision",
     demoUrl: "",
     image: "/images/projects/ChessBot.webp",
-    videoUrl: "NEEDS VIDEO",
+    videoUrl: "",
   },
   {
     title: "AutoPilot",
@@ -98,13 +98,13 @@ export const projects = [
     githubUrl: "https://github.com/redayzarra/AutoPilot",
     demoUrl: "",
     image: "/images/projects/AutoPilot.webp",
-    videoUrl: "https://www.youtube.com/watch?v=jMVhxBB3l0w",
+    videoUrl: "",
   },
   {
     title: "Athena",
     label: "Learning Platform",
     githubUrl: "https://github.com/redayzarra/Athena",
-    demoUrl: "DEMO HERE",
+    demoUrl: "",
     image: "/images/projects/Athena.webp",
     videoUrl: "",
   },
@@ -130,7 +130,7 @@ export const projects = [
     githubUrl: "https://github.com/redayzarra/PocketTrader",
     demoUrl: "",
     image: "/images/projects/PocketTrader.webp",
-    videoUrl: "VIDEO HERE",
+    videoUrl: "",
   },
   {
     title: "Homespace",
@@ -138,6 +138,14 @@ export const projects = [
     githubUrl: "https://github.com/redayzarra/SleepApneaDetection",
     demoUrl: "",
     image: "/images/projects/SleepApnea.webp",
+    videoUrl: "",
+  },
+  {
+    title: "Traffic Signs",
+    label: "MACHINE LEARNING",
+    githubUrl: "https://github.com/redayzarra/CNN_TrafficSigns",
+    demoUrl: "",
+    image: "/images/projects/TrafficSigns.webp",
     videoUrl: "",
   },
 ];

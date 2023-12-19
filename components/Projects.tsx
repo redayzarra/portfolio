@@ -19,9 +19,9 @@ const Projects = ({ projects }: Props) => {
     <div className="flex items-center justify-center">
       <div className="grid w-auto gap-10 grid-cols-1 md:grid-cols-2 items-center justify-center">
         <ProjectCard
-          title="StudyDSA"
+          title="ChatPDF"
           label="In progress"
-          githubUrl="https://github.com/redayzarra/StudyDSA.com"
+          githubUrl="https://github.com/redayzarra/ChatPDF.com"
           image=""
           demoUrl=""
           videoUrl=""
