@@ -35,26 +35,22 @@ const Hello = ({ className }: { className?: string }) => {
           <div className="mt-4 space-x-2">
             <a href="">
               <Button
-                className="rounded-full border-[2px] border-foreground font-bold"
+                className="rounded-full border-[2px] bg-transparent border-foreground font-bold"
                 variant="outline"
               >
                 Resume
               </Button>
             </a>
             <a href="">
-              <Button className="rounded-full" variant="outline">
+              <Button
+                className="rounded-full dark bg-black hover:bg-black/75"
+                variant="secondary"
+              >
                 Contact
               </Button>
             </a>
           </div>
           <div className="mt-4 flex items-center justify-center space-x-4">
-            <a
-              href="https://www.linkedin.com/in/redayzarra/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MdEmail size={32} className="rounded-full" />
-            </a>
             <a
               href="https://www.linkedin.com/in/redayzarra/"
               target="_blank"
