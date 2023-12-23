@@ -96,7 +96,7 @@ const Wordle = () => {
   return (
     <Card className="w-[350px] dark border-zinc-800">
       <CardHeader>
-        <CardTitle>What is today's Wordle?</CardTitle>
+        <CardTitle>What is today&apos;s Wordle?</CardTitle>
         <CardDescription>
           Just a fun way to showcase my backend development skills.
         </CardDescription>
