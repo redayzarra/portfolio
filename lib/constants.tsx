@@ -93,20 +93,20 @@ export const projects = [
     videoUrl: "",
   },
   {
+    title: "Athena",
+    label: "Learning Platform",
+    githubUrl: "https://github.com/redayzarra/Athena",
+    demoUrl: "https://athena-rdz.vercel.app/",
+    image: "/images/projects/Athena.webp",
+    videoUrl: "",
+  },
+  {
     title: "AutoPilot",
     label: "Drone App",
     githubUrl: "https://github.com/redayzarra/AutoPilot",
     demoUrl: "",
     image: "/images/projects/AutoPilot.webp",
-    videoUrl: "",
-  },
-  {
-    title: "Athena",
-    label: "Learning Platform",
-    githubUrl: "https://github.com/redayzarra/Athena",
-    demoUrl: "",
-    image: "/images/projects/Athena.webp",
-    videoUrl: "",
+    videoUrl: "https://www.youtube.com/watch?v=4i84SMtRef0",
   },
   {
     title: "CodeTrack",
@@ -126,7 +126,7 @@ export const projects = [
   },
   {
     title: "PocketTrader",
-    label: "Game Store",
+    label: "Trading Bot",
     githubUrl: "https://github.com/redayzarra/PocketTrader",
     demoUrl: "",
     image: "/images/projects/PocketTrader.webp",
