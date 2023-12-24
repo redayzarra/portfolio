@@ -1,7 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import Backend from "@/components/Backend";
 import Frontend from "@/components/Frontend";
-import Hello from "@/components/Hello";
 import MachineLearning from "@/components/MachineLearning";
 import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
@@ -24,7 +23,6 @@ export default function Home() {
         <Container>
           <NavBar />
           <NewHello className="mt-10" />
-          {/* <Hello className="mt-10" /> */}
         </Container>
       </div>
       {/* Waves */}
