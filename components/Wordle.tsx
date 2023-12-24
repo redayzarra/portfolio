@@ -88,11 +88,6 @@ const Wordle = () => {
     }
   };
 
-  // Function to handle cancel action
-  const handleCancel = () => {
-    form.reset();
-  };
-
   return (
     <Card className="w-[350px] dark border-zinc-800">
       <CardHeader>

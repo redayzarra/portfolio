@@ -5,6 +5,7 @@ import Hello from "@/components/Hello";
 import MachineLearning from "@/components/MachineLearning";
 import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
+import NewHello from "@/components/NewHello";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
@@ -19,16 +20,17 @@ import {
 export default function Home() {
   return (
     <div className="">
-      <div className="bg-gradient-to-t from-[#e3ffe0] via-white to-white">
-        <Container className="">
+      <div className="bg-black">
+        <Container>
           <NavBar />
-          <Hello className="mt-10" />
+          <NewHello className="mt-10" />
+          {/* <Hello className="mt-10" /> */}
         </Container>
       </div>
       {/* Waves */}
-      <div className="spacer layer1 pt-4 bg-[#e3ffe0]"></div>
+      {/* <div className="spacer layer1 pt-4 bg-[#e3ffe0]"></div> */}
       <div className="bg-black text-background">
-        <Container className="-mt-10 space-y-20">
+        <Container className="space-y-20">
           <div>
             <Title heading="Get to know me" title="About Me" />
             <AboutMe />

@@ -48,7 +48,7 @@ const NavLinks = () => {
               >
                 <a
                   href={link.href}
-                  className="text-2xl font-[500] hover:font-bold transition-all"
+                  className="text-2xl font-[500] transition-all"
                 >
                   {link.title}
                 </a>

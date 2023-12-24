@@ -1,9 +1,9 @@
 import me from "@/public/images/Me.jpg";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
+import { IoOpenOutline } from "react-icons/io5";
 import { Button } from "./ui/button";
-import { MdEmail } from "react-icons/md";
 
 const Hello = ({ className }: { className?: string }) => {
   return (
@@ -20,9 +20,9 @@ const Hello = ({ className }: { className?: string }) => {
           />
         </div>
         {/* Greeting */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="text-white flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center">
-            <p className="text-sm text-muted-foreground font-base">
+            <p className="text-md text-muted-foreground font-base">
               Hello&#44; I&apos;m
             </p>
             <p className="mt-2 text-3xl font-black">ReDay Zarra</p>
@@ -35,18 +35,10 @@ const Hello = ({ className }: { className?: string }) => {
           <div className="mt-4 space-x-2">
             <a href="">
               <Button
-                className="rounded-full border-[2px] bg-transparent border-foreground font-bold"
+                className="dark rounded-full border-[1px] border-muted-foreground font-bold"
                 variant="outline"
               >
-                Resume
-              </Button>
-            </a>
-            <a href="">
-              <Button
-                className="rounded-full dark bg-black hover:bg-black/75"
-                variant="secondary"
-              >
-                Contact
+                Resume <IoOpenOutline className="ml-1" size={15} />
               </Button>
             </a>
           </div>

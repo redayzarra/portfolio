@@ -19,7 +19,7 @@ const AboutCard = ({
 }: Props) => {
   return (
     <a href={href} className="h-fit">
-      <GlassCard className="bg-zinc-950 rounded-md text-background border-none hover:bg-zinc-900">
+      <GlassCard className="bg-zinc-950 min-h-[130px] rounded-md text-background border-none hover:bg-zinc-900">
         <div className="flex flex-col items-center justify-center space-y-1 p-2">
           <Icon size={iconSize} />
           <h2 className="text-lg font-semibold">{title}</h2>
