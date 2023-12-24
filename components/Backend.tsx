@@ -2,8 +2,8 @@ import BetterWordle from "./BetterWordle";
 
 const Backend = () => {
   return (
-    <div className="items-center mt-3 justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1 xl:px-16">
-      <div className="flex items-center justify-center h-72 max-w-72">
+    <div className="mx-auto max-w-4xl items-center mt-3 justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1">
+      <div className="flex items-center md:mr-24 justify-center h-72">
         <BetterWordle />
       </div>
       <div className="flex flex-col space-y-3">
