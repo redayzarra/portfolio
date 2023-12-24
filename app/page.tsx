@@ -42,12 +42,12 @@ export default function Home() {
             <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
             <Backend />
             <Skills title="Backend Skills" skills={backendSkills} />
-            <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
-            <MachineLearning />
+            <Separator className="bg-zinc-800 max-w-5xl my-4" />
+            {/* <MachineLearning />
             <Skills
               title="Machine Learning Skills"
               skills={machineLearningSkills}
-            />
+            /> */}
           </div>
           <div>
             <Title heading="Browse My Recent" title="Projects" />
