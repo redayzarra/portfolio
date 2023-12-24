@@ -5,14 +5,14 @@ import AboutCard from "./AboutCard";
 
 const AboutMe = () => {
   return (
-    <div className="justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1 xl:px-16">
+    <div className="px-0 md:px-0 bg-yellow-400 justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1">
       {/* My Image */}
-      <div className="flex items-center justify-center relative mx-auto h-[20rem] w-[22rem] overflow-hidden">
+      <div className="h-72 w-72 relative mx-auto md:mx-0">
         <Image
+          objectFit="cover"
+          layout="fill"
           src={me}
           alt="My Picture"
-          layout="fill"
-          objectFit="cover"
           className="rounded-lg"
         />
       </div>
