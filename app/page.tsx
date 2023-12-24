@@ -5,6 +5,7 @@ import MachineLearning from "@/components/MachineLearning";
 import Container from "@/components/MyComponents/Container";
 import NavBar from "@/components/NavBar";
 import NewHello from "@/components/NewHello";
+import NewNavBar from "@/components/NewNavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
@@ -15,14 +16,15 @@ import {
   machineLearningSkills,
   projects,
 } from "@/lib/constants";
+import { BsMouse } from "react-icons/bs";
 
 export default function Home() {
   return (
     <div className="">
       <div className="bg-black">
         <Container>
-          <NavBar />
-          <NewHello className="mt-10" />
+          <NewNavBar />
+          <NewHello className="mt-64" />
         </Container>
       </div>
       {/* Waves */}

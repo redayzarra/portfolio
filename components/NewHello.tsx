@@ -1,6 +1,6 @@
 import me from "@/public/images/Me.jpg";
 import Image from "next/image";
-import { BsLinkedin } from "react-icons/bs";
+import { BsLinkedin, BsMouse } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
 import { IoOpenOutline } from "react-icons/io5";
 import { Button } from "./ui/button";
@@ -53,6 +53,11 @@ const NewHello = ({ className }: { className: string }) => {
           >
             <FaGithub size={30} className="" />
           </a>
+        </div>
+
+        <div className="hidden md:flex text-white items-center text-lg pt-40">
+          <BsMouse className="mr-2" size={20} />
+          <p>Scroll down &darr;</p>
         </div>
       </div>
 
