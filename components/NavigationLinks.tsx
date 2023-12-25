@@ -3,24 +3,16 @@ import React from "react";
 const NavigationLinks = () => {
   return (
     <div className="flex text-white space-x-6">
-      <a href="" className="">
-        Home
-      </a>
-      <a href="" className="">
-        About
-      </a>
-      <a href="" className="">
-        Experience
-      </a>
-      <a href="" className="">
-        Projects
-      </a>
-      <a href="" className="">
-        Education
-      </a>
-      <a href="" className="">
-        Contact
-      </a>
+      {["Home", "About", "Experience", "Projects", "Education", "Contact"].map(
+        (link) => (
+          <div className="relative">
+            <a href="" className="hover:font-bold transition-all absolute">
+              {link}
+            </a>
+            <div className="invisible-bold">{link}</div>
+          </div>
+        )
+      )}
     </div>
   );
 };

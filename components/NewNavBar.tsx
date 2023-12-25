@@ -3,7 +3,7 @@ import Logo from "./MyComponents/Logo";
 import NavigationLinks from "./NavigationLinks";
 const NavBar = () => {
   return (
-    <div className="shadow-md fixed top-0 left-0 right-0 z-50 flex items-center backdrop-blur-[8px]">
+    <div className="shadow-md fixed top-0 left-0 right-0 py-2 z-50 flex items-center backdrop-blur-[8px]">
       <div className="mx-auto max-w-7xl py-3 px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between">
           <Logo />

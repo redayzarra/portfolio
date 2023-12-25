@@ -58,6 +58,11 @@
   }
 }
 
+.invisible-bold {
+  visibility: hidden;
+  font-weight: bold;
+}
+
 /* Waves */
 .spacer {
   aspect-ratio: 960/200;
