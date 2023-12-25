@@ -21,7 +21,7 @@ const Projects = ({ projects }: Props) => {
         <ProjectCard
           title="ChatPDF"
           label="In progress"
-          githubUrl="https://github.com/redayzarra/ChatPDF.com"
+          githubUrl="https://github.com/redayzarra/ChatPDF"
           image=""
           demoUrl=""
           videoUrl=""

@@ -23,19 +23,19 @@ const AboutMe = () => {
             href="youtube.com"
             title="Experience"
             icon={FaMedal}
-            description="Discover my experience and skills"
+            description="Over 1+ years of experience"
           />
           <AboutCard
             href="youtube.com"
             title="Projects"
             icon={FaCode}
-            description="Explore my personal projects"
+            description="Built over a dozen projects"
           />
           <AboutCard
             href="youtube.com"
             title="Education"
             icon={FaUserGraduate}
-            description="Learn about my education and achievements"
+            description="Earned 30+ certificates"
           />
         </div>
         {/* About Me */}

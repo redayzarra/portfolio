@@ -1,67 +1,78 @@
 import me from "@/public/images/Me.jpg";
 import Image from "next/image";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { BsLinkedin, BsMouse } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa6";
 import { IoOpenOutline } from "react-icons/io5";
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 
-const Hello = ({ className }: { className?: string }) => {
+const NewHello = ({ className }: { className: string }) => {
   return (
-    <div className={`flex items-center justify-center ${className}`}>
-      <div className="flex md:space-x-12">
-        {/* My photo */}
-        <div className="hidden md:block relative h-80 w-80 rounded-full overflow-hidden">
-          <Image
-            src={me}
-            alt="My Picture"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full"
-          />
-        </div>
-        {/* Greeting */}
-        <div className="text-white flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center">
-            <p className="text-md text-muted-foreground font-base">
-              Hello&#44; I&apos;m
-            </p>
-            <p className="mt-2 text-3xl font-black">ReDay Zarra</p>
-            <p className="mt-1 text-[19px] font-base tracking-wider text-muted-foreground/90">
-              Software Engineer
-            </p>
+    <div
+      className={`${className} text-white flex max-w-4xl mx-auto justify-center md:justify-between`}
+    >
+      {/* My information */}
+      <div className="flex flex-col space-y-4">
+        <h1 className="text-6xl font-bold">ReDay Zarra</h1>
+        <div className="flex space-x-2 items-center">
+          <h2 className="flex-shrink-0 text-lg text-muted-foreground">
+            Software Engineer
+          </h2>
+          <div className="flex-grow">
+            <Separator className="bg-muted-foreground hidden md:block" />
           </div>
+        </div>
+        <p className="max-w-sm">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          quibusdam iusto illo cupiditate vitae dicta repudiandae, quo minima
+          quos officia!
+        </p>
 
-          {/* Resume and Contact Buttons */}
-          <div className="mt-4 space-x-2">
-            <a href="">
-              <Button
-                className="dark rounded-full border-[1px] border-muted-foreground font-bold"
-                variant="outline"
-              >
-                Resume <IoOpenOutline className="ml-1" size={15} />
-              </Button>
-            </a>
-          </div>
-          <div className="mt-4 flex items-center justify-center space-x-4">
-            <a
-              href="https://www.linkedin.com/in/redayzarra/"
-              target="_blank"
-              rel="noopener noreferrer"
+        {/* Buttons */}
+        <div className="flex pt-9 space-x-6 items-center justify-center md:justify-normal">
+          <a href="" className="w-fit">
+            <Button
+              className="dark border-[1px] text-md border-muted-foreground font-bold"
+              variant="outline"
+              size="lg"
             >
-              <BsLinkedin size={30} className="rounded-full" />
-            </a>
-            <a
-              href="https://github.com/redayzarra"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub size={30} className="" />
-            </a>
-          </div>
+              Resume <IoOpenOutline className="ml-1" size={15} />
+            </Button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/redayzarra/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <BsLinkedin size={30} className="rounded-full" />
+          </a>
+          <a
+            href="https://github.com/redayzarra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={30} className="" />
+          </a>
         </div>
+
+        <div className="hidden md:flex text-white items-center text-lg pt-40">
+          <BsMouse className="mr-2" size={20} />
+          <p>Scroll down &darr;</p>
+        </div>
+      </div>
+
+      {/* My image */}
+      <div className="h-72 w-[350px] hidden md:block relative mx-auto md:mx-0">
+        <Image
+          objectFit="cover"
+          layout="fill"
+          src={me}
+          alt="My Picture"
+          className="rounded-lg"
+        />
       </div>
     </div>
   );
 };
 
-export default Hello;
+export default NewHello;

@@ -18,7 +18,7 @@ const AboutCard = ({
   description,
 }: Props) => {
   return (
-    <a href={href} className="">
+    <div className="cursor-default">
       <GlassCard className="bg-zinc-950 min-h-[130px] rounded-md text-background border-none hover:bg-zinc-900">
         <div className="flex flex-col items-center justify-center space-y-1 p-2">
           <Icon size={iconSize} />
@@ -28,7 +28,7 @@ const AboutCard = ({
           </p>
         </div>
       </GlassCard>
-    </a>
+    </div>
   );
 };
 
