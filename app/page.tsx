@@ -16,7 +16,6 @@ import {
   machineLearningSkills,
   projects,
 } from "@/lib/constants";
-import { BsMouse } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -24,14 +23,14 @@ export default function Home() {
       <div className="bg-black">
         <Container>
           <NewNavBar />
-          <NewHello className="mt-64" />
+          <NewHello className="mt-24 md:mt-64" />
         </Container>
       </div>
       {/* Waves */}
       {/* <div className="spacer layer1 pt-4 bg-[#e3ffe0]"></div> */}
       <div className="bg-black text-background">
         <Container className="space-y-20">
-          <div>
+          <div className="md:mt-[131px]">
             <Title heading="Get to know me" title="About Me" />
             <AboutMe />
           </div>
@@ -50,7 +49,7 @@ export default function Home() {
             /> */}
           </div>
           <div>
-            <Title heading="Browse My Recent" title="Projects" />
+            <Title heading="Browse My Six Recent" title="Projects" />
             <Projects projects={projects} />
           </div>
         </Container>

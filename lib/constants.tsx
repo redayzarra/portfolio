@@ -116,14 +116,14 @@ export const projects = [
     image: "/images/projects/CodeTrack.webp",
     videoUrl: "",
   },
-  {
-    title: "GameHub",
-    label: "Game Store",
-    githubUrl: "https://github.com/redayzarra/GameHub",
-    demoUrl: "https://game-hub-flame-two.vercel.app/",
-    image: "/images/projects/GameHub.webp",
-    videoUrl: "",
-  },
+  // {
+  //   title: "GameHub",
+  //   label: "Game Store",
+  //   githubUrl: "https://github.com/redayzarra/GameHub",
+  //   demoUrl: "https://game-hub-flame-two.vercel.app/",
+  //   image: "/images/projects/GameHub.webp",
+  //   videoUrl: "",
+  // },
   {
     title: "PocketTrader",
     label: "Trading Bot",
@@ -140,12 +140,12 @@ export const projects = [
     image: "/images/projects/SleepApnea.webp",
     videoUrl: "",
   },
-  {
-    title: "Traffic Signs",
-    label: "MACHINE LEARNING",
-    githubUrl: "https://github.com/redayzarra/CNN_TrafficSigns",
-    demoUrl: "",
-    image: "/images/projects/TrafficSigns.webp",
-    videoUrl: "",
-  },
+  // {
+  //   title: "Traffic Signs",
+  //   label: "MACHINE LEARNING",
+  //   githubUrl: "https://github.com/redayzarra/CNN_TrafficSigns",
+  //   demoUrl: "",
+  //   image: "/images/projects/TrafficSigns.webp",
+  //   videoUrl: "",
+  // },
 ];
