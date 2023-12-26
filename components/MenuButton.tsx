@@ -16,10 +16,10 @@ const MenuButton = ({ isActive, setIsActive }: Props) => {
         transition={{ duration: 0.75, ease: [0.75, 0, 0.24, 1] }}
       >
         <div className="elem">
-          <PerspectiveText label="Menu" />
+          <PerspectiveText label="MenuMenu" />
         </div>
         <div className="elem">
-          <PerspectiveText label="Close" />
+          <PerspectiveText label="CloseClose" />
         </div>
       </motion.div>
     </div>
