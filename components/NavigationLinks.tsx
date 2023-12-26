@@ -1,11 +1,13 @@
 import React from "react";
 
-const NavigationLinks = () => {
+const NavigationLinks = ({ className }: { className?: string }) => {
   return (
-    <div className="flex text-white space-x-6">
+    <div className={`flex text-white space-x-6 ${className}`}>
       {["Home", "About", "Experience", "Projects", "Education", "Contact"].map(
         (link) => (
-          <div key={link} className="relative"> {/* Added key prop here */}
+          <div key={link} className="relative">
+            {" "}
+            {/* Added key prop here */}
             <a href="#" className="hover:font-bold transition-all absolute">
               {link}
             </a>
@@ -18,4 +20,3 @@ const NavigationLinks = () => {
 };
 
 export default NavigationLinks;
-

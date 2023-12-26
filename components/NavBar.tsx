@@ -13,7 +13,7 @@ const NavBar = () => {
 
           {/* Dark Mode and LogIn */}
           <div className="gap-x-2 flex items-center justify-center">
-            <NavigationLinks />
+            <NavigationLinks className="hidden md:flex" />
             <div className="flex md:hidden">
               <Menu />
             </div>
