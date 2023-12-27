@@ -6,7 +6,7 @@ import { IoOpenOutline } from "react-icons/io5";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
-const NewHello = ({ className }: { className: string }) => {
+const Hello = ({ className }: { className: string }) => {
   return (
     <div
       className={`${className} text-white flex max-w-4xl mx-auto justify-center md:justify-between`}
@@ -75,4 +75,4 @@ const NewHello = ({ className }: { className: string }) => {
   );
 };
 
-export default NewHello;
+export default Hello;

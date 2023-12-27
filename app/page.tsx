@@ -3,9 +3,8 @@ import Backend from "@/components/Backend";
 import Frontend from "@/components/Frontend";
 import MachineLearning from "@/components/MachineLearning";
 import Container from "@/components/MyComponents/Container";
-import NavBar from "@/components/ARCHIVE/NavBar";
-import NewHello from "@/components/Hello";
-import NewNavBar from "@/components/NavBar";
+import Hello from "@/components/Hello";
+import NavBar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Title from "@/components/Title";
@@ -22,8 +21,8 @@ export default function Home() {
     <div className="">
       <div className="bg-black">
         <Container>
-          <NewNavBar />
-          <NewHello className="mt-24 md:mt-64" />
+          <NavBar />
+          <Hello className="mt-24 md:mt-64" />
         </Container>
       </div>
       {/* Waves */}

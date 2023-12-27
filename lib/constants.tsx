@@ -85,19 +85,19 @@ export const machineLearningSkills = [
 
 export const projects = [
   {
-    title: "KnightVision",
-    label: "chess bot",
-    githubUrl: "https://github.com/redayzarra/KnightVision",
-    demoUrl: "",
-    image: "/images/projects/ChessBot.webp",
-    videoUrl: "",
-  },
-  {
     title: "Athena",
     label: "Learning Platform",
     githubUrl: "https://github.com/redayzarra/Athena",
     demoUrl: "https://athena-rdz.vercel.app/",
     image: "/images/projects/Athena.webp",
+    videoUrl: "",
+  },
+  {
+    title: "KnightVision",
+    label: "chess bot",
+    githubUrl: "https://github.com/redayzarra/KnightVision",
+    demoUrl: "",
+    image: "/images/projects/ChessBot.webp",
     videoUrl: "",
   },
   {
