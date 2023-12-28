@@ -11,11 +11,11 @@ const Backend = () => {
           Backend Development
         </h1>
         <p className="text-muted-foreground">
-          With my background in backend development&comma; I bring over a year of
-          experience in building robust and scalable server&hyphen;side applications&period; I
+          With my background in backend development, I bring over a year of
+          experience in building robust and scalable server-side applications. I
           am committed to implementing complex functionalities and seamless data
-          integration&comma; ensuring high performance and reliability in every
-          project&period;
+          integration, ensuring high performance and reliability in every
+          project.
         </p>
       </div>
     </div>

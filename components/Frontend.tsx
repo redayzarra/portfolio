@@ -14,10 +14,10 @@ const Frontend = () => {
           Frontend Development
         </h1>
         <p className="text-muted-foreground">
-          As a front&hyphen;end developer with over a year of experience&comma; I specialize
-          in developing responsive&comma; user&hyphen;centric web and mobile applications&period; I
-          love creating functional and visually appealing designs&comma; focusing on
-          delivering intuitive and engaging user experiences&period;
+          As a front-end developer with over a year of experience, I specialize
+          in developing responsive, user-centric web and mobile applications. I
+          love creating functional and visually appealing designs, focusing on
+          delivering intuitive and engaging user experiences.
         </p>
       </div>
     </div>

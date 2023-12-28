@@ -23,9 +23,9 @@ const Hello = ({ className }: { className: string }) => {
           </div>
         </div>
         <p className="max-w-sm">
-          I&apos;m a software engineer from Boston&comma; MA&period; I love turning complex
-          problems into beautiful simple solutions&period; I&apos;m also looking for job
-          opportunities&period;
+          I'm a software engineer from Boston, MA. I love turning complex
+          problems into beautiful simple solutions. I'm also looking for job
+          opportunities.
         </p>
 
         {/* Buttons */}
