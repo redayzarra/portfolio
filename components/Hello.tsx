@@ -13,7 +13,7 @@ const Hello = ({ className }: { className: string }) => {
     >
       {/* My information */}
       <div className="flex flex-col space-y-4">
-        <h1 className="text-6xl font-bold">ReDay Zarra</h1>
+        <h1 className="text-6xl font-bold truncate pb-1.5">ReDay Zarra</h1>
         <div className="flex space-x-2 items-center">
           <h2 className="flex-shrink-0 text-lg text-muted-foreground">
             Software Engineer

@@ -3,7 +3,7 @@ import React from "react";
 const NavigationLinks = ({ className }: { className?: string }) => {
   return (
     <div className={`flex text-white space-x-6 ${className}`}>
-      {["Home", "About", "Experience", "Projects", "Education", "Contact"].map(
+      {["Home", "About", "Experience", "Projects", "Contact"].map(
         (link) => (
           <div key={link} className="relative">
             {" "}
