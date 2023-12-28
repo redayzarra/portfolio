@@ -41,7 +41,7 @@ const AboutMe = () => {
         {/* About Me */}
         <p className="text-muted-foreground">
           I have over a year of hands-on experience in software engineering,
-          I've sharpened my skills primarily through a range of open-source
+          I&apos;ve sharpened my skills primarily through a range of open-source
           projects. I have a MicroMasters in Data Science & ML from MIT, along
           with professional certificates in computer science from Harvard.
         </p>

@@ -23,8 +23,8 @@ const Hello = ({ className }: { className: string }) => {
           </div>
         </div>
         <p className="max-w-sm">
-          I'm a software engineer from Boston, MA. I love turning complex
-          problems into beautiful simple solutions. I'm also looking for job
+          I&apos;m a software engineer from Boston, MA. I love turning complex
+          problems into beautiful simple solutions. I&apos;m also looking for job
           opportunities.
         </p>
 
