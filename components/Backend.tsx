@@ -11,9 +11,11 @@ const Backend = () => {
           Backend Development
         </h1>
         <p className="text-muted-foreground">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          quaerat fugit quod minima distinctio ratione possimus impedit. Quam,
-          fugiat. Atque.
+          With my background in backend development, I bring over a year of
+          experience in building robust and scalable server-side applications. I
+          am committed to implementing complex functionalities and seamless data
+          integration, ensuring high performance and reliability in every
+          project.
         </p>
       </div>
     </div>

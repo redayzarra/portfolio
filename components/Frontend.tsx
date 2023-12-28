@@ -14,9 +14,10 @@ const Frontend = () => {
           Frontend Development
         </h1>
         <p className="text-muted-foreground">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          quaerat fugit quod minima distinctio ratione possimus impedit. Quam,
-          fugiat. Atque.
+          As a front-end developer with over a year of experience, I specialize
+          in developing responsive, user-centric web and mobile applications. I
+          love creating functional and visually appealing designs, focusing on
+          delivering intuitive and engaging user experiences.
         </p>
       </div>
     </div>

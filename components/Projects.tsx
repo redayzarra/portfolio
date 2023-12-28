@@ -31,9 +31,10 @@ const Projects = ({ projects }: Props) => {
             Hands-On Learning
           </h1>
           <p className="text-muted-foreground">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            quaerat fugit quod minima distinctio ratione possimus impedit. Quam,
-            fugiat. Atque.
+            I love building personal projects that challenge my understanding of
+            good software engineering practices and computer science
+            fundamentals. My goal is to write clean, efficient code while
+            working on projects that inspire and excite me.
           </p>
         </div>
         {projects.map((project) => {
