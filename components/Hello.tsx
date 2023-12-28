@@ -9,6 +9,7 @@ import { Separator } from "./ui/separator";
 const Hello = ({ className }: { className: string }) => {
   return (
     <div
+      id="home"
       className={`${className} text-white flex max-w-4xl mx-auto justify-center md:justify-between`}
     >
       {/* My information */}
@@ -24,8 +25,8 @@ const Hello = ({ className }: { className: string }) => {
         </div>
         <p className="max-w-sm">
           I&apos;m a software engineer from Boston, MA. I love turning complex
-          problems into beautiful simple solutions. I&apos;m also looking for job
-          opportunities.
+          problems into beautiful simple solutions. I&apos;m also looking for
+          job opportunities.
         </p>
 
         {/* Buttons */}

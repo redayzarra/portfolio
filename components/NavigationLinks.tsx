@@ -1,10 +1,10 @@
 import React from "react";
 
 export const myLinks = [
-  { title: "About Me", href: "/" },
-  { title: "Experience", href: "/" },
-  { title: "Projects", href: "/" },
-  { title: "Contact", href: "/" },
+  { title: "About Me", href: "#home" },
+  { title: "Experience", href: "#experience" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const NavigationLinks = ({ className }: { className?: string }) => {
