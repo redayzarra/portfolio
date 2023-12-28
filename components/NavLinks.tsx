@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-
-const links = [
-  { title: "About Me", href: "/" },
-  { title: "Experience", href: "/" },
-  { title: "Projects", href: "/" },
-  { title: "Contact", href: "/" },
-];
+import { myLinks } from "./NavigationLinks";
 
 const perspective = {
   initial: {
@@ -36,7 +30,7 @@ const NavLinks = () => {
   return (
     <div className="nav">
       <div className="nav-body">
-        {links.map((link, index) => {
+        {myLinks.map((link, index) => {
           return (
             <div key={index} className="nav-container">
               <motion.div

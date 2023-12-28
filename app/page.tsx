@@ -47,7 +47,7 @@ export default function Home() {
               skills={machineLearningSkills}
             /> */}
           </div>
-          <div>
+          <div className="md:pt-10">
             <Title heading="Browse My Six Recent" title="Projects" />
             <Projects projects={projects} />
           </div>
