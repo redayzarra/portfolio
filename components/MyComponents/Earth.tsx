@@ -20,6 +20,7 @@ const EarthMesh = () => {
     "/images/Earth/color.webp",
     "/images/Earth/normal.webp",
     "/images/Earth/occlusion.webp",
+    
   ]);
 
   return (

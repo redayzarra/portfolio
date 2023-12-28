@@ -9,7 +9,6 @@ import { Separator } from "./ui/separator";
 const Hello = ({ className }: { className: string }) => {
   return (
     <div
-      id="home"
       className={`${className} text-white flex max-w-4xl mx-auto justify-center md:justify-between`}
     >
       {/* My information */}

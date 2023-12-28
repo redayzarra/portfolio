@@ -22,6 +22,7 @@ export default function Home() {
       <div className="bg-black">
         <Container>
           <NavBar />
+          <div id="home"></div>
           <Hello className="mt-24 md:mt-64" />
         </Container>
       </div>
@@ -48,7 +49,10 @@ export default function Home() {
             /> */}
           </div>
           <div className="md:pt-10">
-            <Title heading="Browse My Six Recent" title="Projects" />
+            <Title
+              heading="Browse My Six Recent"
+              title="Projects"
+            />
             <Projects projects={projects} />
           </div>
           <div>
