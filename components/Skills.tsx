@@ -18,13 +18,14 @@ const Skills = ({ skills = [], title, cols = 5 }: Props) => {
       <h2 className="flex items-center justify-center font-semibold text-lg text-white">
         {title}
       </h2>
-      <div className={`grid grid-cols-4 md:grid-cols-6 gap-2`}>
+      <div className={`grid grid-cols-4 md:grid-cols-6 gap-3`}>
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center p-2">
-            <SpringyDiv className="hover:text-white mb-1">
+            <SpringyDiv className="hover:text-white mb-1 hidden md:flex">
               {skill.icon}
             </SpringyDiv>
-            <p className="truncate">{skill.name}</p>
+            <div className="flex md:hidden">{skill.icon}</div>
+            <p className="truncate text-sm">{skill.name}</p>
           </div>
         ))}
       </div>
