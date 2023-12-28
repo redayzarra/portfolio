@@ -40,10 +40,10 @@ const AboutMe = () => {
         </div>
         {/* About Me */}
         <p className="text-muted-foreground">
-          I have over a year of hands-on experience in software engineering,
-          I've sharpened my skills primarily through a range of open-source
-          projects. I have a MicroMasters in Data Science & ML from MIT, along
-          with professional certificates in computer science from Harvard.
+          I have over a year of hands&hyphen;on experience in software engineering&comma;
+          I&apos;ve sharpened my skills primarily through a range of open&hyphen;source
+          projects&period; I have a MicroMasters in Data Science &amp; ML from MIT&comma; along
+          with professional certificates in computer science from Harvard&period;
         </p>
       </div>
     </div>
