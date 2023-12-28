@@ -23,9 +23,9 @@ const Hello = ({ className }: { className: string }) => {
           </div>
         </div>
         <p className="max-w-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-          quibusdam iusto illo cupiditate vitae dicta repudiandae, quo minima
-          quos officia!
+          I'm a software engineer from Boston, MA. I love turning complex
+          problems into beautiful simple solutions. I'm also looking for job
+          opportunities.
         </p>
 
         {/* Buttons */}

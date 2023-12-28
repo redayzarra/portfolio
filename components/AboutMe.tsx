@@ -40,8 +40,10 @@ const AboutMe = () => {
         </div>
         {/* About Me */}
         <p className="text-muted-foreground">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          voluptate nostrum a culpa provident quae in molestiae vero ea illum!
+          I have over a year of hands-on experience in software engineering,
+          I've sharpened my skills primarily through a range of open-source
+          projects. I have a MicroMasters in Data Science & ML from MIT, along
+          with professional certificates in computer science from Harvard.
         </p>
       </div>
     </div>

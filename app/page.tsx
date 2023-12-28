@@ -33,7 +33,7 @@ export default function Home() {
             <Title heading="Get to know me" title="About Me" />
             <AboutMe />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center pt-28">
             <Title heading="Explore my" title="Experience" />
             <Frontend />
             <Skills title="Frontend Skills" skills={frontendSkills} />
@@ -50,6 +50,9 @@ export default function Home() {
           <div>
             <Title heading="Browse My Six Recent" title="Projects" />
             <Projects projects={projects} />
+          </div>
+          <div>
+            <Title heading="Learn About My" title="Education" />
           </div>
         </Container>
       </div>
