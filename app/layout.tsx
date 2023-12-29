@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <Head>
-        <title>ReDay's Portfolio</title>
+        <title>ReDay&apos;s Portfolio</title>
         <meta name="description" content="Portfolio website of ReDay Zarra" />
         <link rel="icon" href="/images/myLogo.png" />
       </Head>
