@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,6 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
+      <Head>
+        <title>ReDay's Portfolio</title>
+        <meta name="description" content="Portfolio website of ReDay Zarra" />
+        <link rel="icon" href="/images/myLogo.png" />
+      </Head>
       <body className={inter.className}>
         <SmoothScroll>
           <main>{children}</main>
@@ -27,3 +33,4 @@ export default function RootLayout({
     </html>
   );
 }
+
