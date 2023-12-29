@@ -2,7 +2,7 @@ import EarthFrame from "./EarthFrame";
 
 const Frontend = () => {
   return (
-    <div id="experience" className="max-w-4xl mx-auto items-center justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1 mt-14 md:mb-14">
+    <div className="max-w-4xl mx-auto items-center justify-center grid md:gap-2 gap-4 md:grid-cols-2 sm:grid-cols-1 mt-14 md:mb-14">
       <div className="flex flex-col items-center justify-center space-y-4">
         <div className="flex items-center justify-center md:mr-24 h-72 max-w-72">
           <EarthFrame />

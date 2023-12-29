@@ -55,7 +55,10 @@ const Hello = ({ className }: { className: string }) => {
           </a>
         </div>
 
-        <div className="hidden md:flex text-white items-center text-lg pt-40">
+        <div
+          id="about"
+          className="hidden md:flex text-white items-center text-lg pt-40"
+        >
           <BsMouse className="mr-2" size={20} />
           <p>Scroll down &darr;</p>
         </div>

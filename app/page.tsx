@@ -41,7 +41,7 @@ export default function Home() {
             <Separator className="bg-zinc-800 max-w-5xl my-4 mb-10" />
             <Backend />
             <Skills title="Backend Skills" skills={backendSkills} />
-            <Separator className="bg-zinc-800 max-w-5xl my-4" />
+            <Separator className="bg-zinc-800 max-w-5xl my-4" id="projects" />
             {/* <MachineLearning />
             <Skills
               title="Machine Learning Skills"
@@ -49,15 +49,12 @@ export default function Home() {
             /> */}
           </div>
           <div className="md:pt-10">
-            <Title
-              heading="Browse My Six Recent"
-              title="Projects"
-            />
+            <Title heading="Browse My Six Recent" title="Projects" />
             <Projects projects={projects} />
           </div>
-          <div>
+          {/* <div>
             <Title heading="Feel Free To" title="Contact Me" />
-          </div>
+          </div> */}
         </Container>
       </div>
     </div>

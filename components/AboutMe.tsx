@@ -5,7 +5,7 @@ import AboutCard from "./AboutCard";
 
 const AboutMe = () => {
   return (
-    <div id="about" className="max-w-4xl mx-auto justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1">
+    <div className="max-w-4xl mx-auto justify-center grid md:gap-2 gap-8 md:grid-cols-2 sm:grid-cols-1">
       {/* My Image */}
       <div className="h-72 w-[350px] relative mx-auto md:mx-0">
         <Image
@@ -39,7 +39,7 @@ const AboutMe = () => {
           />
         </div>
         {/* About Me */}
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground" id="experience">
           I have over a year of hands-on experience in software engineering,
           I&apos;ve sharpened my skills primarily through a range of open-source
           projects. I have a MicroMasters in Data Science & ML from MIT, along
