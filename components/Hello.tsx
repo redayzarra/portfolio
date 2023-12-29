@@ -30,7 +30,12 @@ const Hello = ({ className }: { className: string }) => {
 
         {/* Buttons */}
         <div className="flex pt-9 space-x-6 items-center justify-center md:justify-normal">
-          <a href="" className="w-fit">
+          <a
+            href="/pdf/myResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit"
+          >
             <Button
               className="dark border-[1px] text-md border-muted-foreground font-bold"
               variant="outline"
